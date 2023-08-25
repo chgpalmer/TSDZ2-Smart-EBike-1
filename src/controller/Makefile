@@ -109,7 +109,7 @@ flash:
 	stm8flash -c stlinkv2 -p stm8s105?6 -w $(ODIR)/$(PNAME).ihx
 # This is 
 clear_eeprom:
-	stm8flash -c stlinkv2 -p stm8s105?6 -w data_empty.ihx
+	stm8flash -c stlinkv2 -p stm8s105?6 -w data_empty.ihx -s eeprom
 
 
 clean:
